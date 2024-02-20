@@ -4,7 +4,9 @@ import pamplete from "./images/pamplete.jpeg";
 function App() {
   return (
     <>
-      <img src={pamplete} />
+      <div className="main">
+        <img src={pamplete} className="pamplete" width="90%" />
+      </div>
     </>
   );
 }
