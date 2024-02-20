@@ -1,15 +1,17 @@
-import "./App.css";
-import { Buttonx } from "./Components/Buttonx";
-import LoadingButton from "./Components/submit";
-import pamplete from "./images/pamplete.jpeg";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Home from "./Components/home";
+import Register from "./Components/Register";
 
 function App() {
   return (
     <>
-      <div className="main">
-        <img src={pamplete} className="pamplete" width="90%" />
-      </div>
-      <LoadingButton />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          {/* <Route exact path="/debugapalooza" element={<DebugaPalooza />} /> */}
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

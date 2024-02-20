@@ -1,8 +1,11 @@
 import Button from "react-bootstrap/Button";
+import "../App.css";
 export const Buttonx = () => {
   return (
     <>
-      <Button variant="outline-primary">Secondary</Button>{" "}
+      <Button className="buttonx" variant="outline-primary" width="10%">
+        Secondary
+      </Button>{" "}
     </>
   );
 };
